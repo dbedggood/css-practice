@@ -12,6 +12,16 @@ p {
   margin-top: 0;
 }
 
+/* ! good to be specific about styles. */
+/* A user could have the font installed on their computer,  */
+/* by default it chooses 800 instead of 900 for bold. */
+
+h1,
+h2,
+strong {
+  font-weight: 900;
+}
+
 h1 {
   font-size: 36px;
   color: #fff;
@@ -37,11 +47,20 @@ p {
   margin-bottom: 0;
 }
 
+/* ! this is very common, will be using this a lot */
+
 .container {
   width: 620px;
   padding: 45px;
   margin: 0 auto;
 }
+
+.last-element {
+  margin-bottom: 0;
+}
+
+/* ! same colour as h2, could have been grouped together */
+/* but this way is good to keep 'a' styles organised near each other */
 
 a {
   color: #ef5839;
@@ -50,10 +69,6 @@ a {
 a:hover,
 a:focus {
   color: orange;
-}
-
-.last-element {
-  margin-bottom: 0;
 }
 
 .button {
