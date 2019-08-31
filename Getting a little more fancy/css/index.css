@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  color: #707070;
+}
+
+h1 {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1 span {
+  color: #b7832f;
+}
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 0;
+}
+
+.col-dark {
+  background: #312614;
+  color: #fff;
+  padding: 1.5em;
+}
+
+.col-s {
+  width: 23%;
+}
+
+.col-m {
+  width: 46%;
+}
+
+.col-l {
+  width: 69%;
+}
