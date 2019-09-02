@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background: #f8f8f8;
+}
+
+header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4rem;
+  font-family: 'Lora', serif;
+  color: #143774;
+}
+
+/* ! If you do use compound selectors, keep them simple. */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+nav a {
+  /* border: 1px solid orange; */
+  padding: 0.5em;
+  text-decoration: none;
+  color: #707070;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 2px solid;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+.site-title {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-variant: small-caps;
+}
