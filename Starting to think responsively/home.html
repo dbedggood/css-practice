@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- * NAVIGATION START -->
+    <!-- ! header, main, aside, footer, etc are good for a11y -->
+    <header>
+      <div class="container container-flex">
+        <div class="site-title">
+          <h1>Living the Simple Life</h1>
+          <p class="subtitle">
+            a jobless developer's day-to-day
+          </p>
+        </div>
+        <nav>
+          <ul>
+            <li class="first-nav-link">
+              <a href="home.html" class="current-page">Home</a>
+            </li>
+            <li>
+              <a href="recent-posts.html">Recent Posts</a>
+            </li>
+            <li><a href="about-me.html">About Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- * NAVIGATION END -->
+    <div class="container container-flex">
+      <main role="main">
+        <!-- ! Starting things with the name helps to keep CSS organised. -->
+        <article class="article-featured">
+          <h2 class="article-title">The Mermaid Pools</h2>
+          <img
+            src="./img/matapouri.png"
+            alt="A girl standing on rocky cliff, sky in background. (Photograph)"
+            class="article-image"
+          />
+          <p class="article-info">August 23, 2019</p>
+          <p class="article-body">
+            This website was made to improve my CSS skills, especially on how to
+            create responsive websites. If you're on a computer, try resizing
+            the window to see how the layout changes! I'm am very happy with how
+            this turned out.
+          </p>
+          <a href="#" class="continue-reading">CONTINUE READING</a>
+        </article>
+
+        <!-- ! Giving everything a class makes CSS easier. -->
+        <article class="article-recent">
+          <div class="article-recent-main">
+            <h2 class="article-title">A Day at the Beach</h2>
+            <p class="article-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              ultricies hendrerit risus eu efficitur. Ut blandit odio et ante
+              mattis, in pulvinar tellus eleifend.
+            </p>
+            <a href="#" class="continue-reading">CONTINUE READING</a>
+          </div>
+          <div class="article-recent-secondary">
+            <img
+              src="./img/tauranga.png"
+              alt="A girl walking in shallow water at the beach, an island in the distance. (Photograph)"
+              class="article-image"
+            />
+            <p class="article-info">August 19, 2019</p>
+          </div>
+        </article>
+
+        <article class="article-recent">
+          <div class="article-recent-main">
+            <h2 class="article-title">Visiting Home</h2>
+            <p class="article-body">
+              Quisque at tincidunt massa. Sed id euismod nulla. Phasellus vel
+              turpis a mi auctor sodales. Aliquam vel congue tellus, ut interdum
+              enim. Aenean vitae erat dictum, pharetra leo a, condimentum
+              ligula. Aliquam mauris erat, egestas ut tristique nec, tincidunt
+              ut leo. Nam nec consectetur lorem.
+            </p>
+            <a href="#" class="continue-reading">CONTINUE READING</a>
+          </div>
+          <div class="article-recent-secondary">
+            <img
+              src="./img/whangateau.png"
+              alt="The sun setting over a landscape of grassy hills and trees. (Photograph)"
+              class="article-image"
+            />
+            <p class="article-info">August 12, 2019</p>
+          </div>
+        </article>
+
+        <article class="article-recent">
+          <div class="article-recent-main">
+            <h2 class="article-title">Hole in the Rock</h2>
+            <p class="article-body">
+              Morbi sit amet nisi vestibulum, aliquet ante ut, fermentum risus.
+              Mauris ac diam eros. Curabitur elementum dignissim mattis. Aliquam
+              laoreet, ligula accumsan ultricies condimentum, dolor massa
+              maximus dui, ut convallis sapien nibh sed quam.
+            </p>
+            <a href="#" class="continue-reading">CONTINUE READING</a>
+          </div>
+          <div class="article-recent-secondary">
+            <img
+              src="./img/russel.png"
+              alt="A rocky island with a tunnel-like hole underneath it large enough for boats to pass through. (Photograph)"
+              class="article-image"
+            />
+            <p class="article-info">August 3, 2019</p>
+          </div>
+        </article>
+      </main>
+
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h2 class="widget-title">ABOUT ME</h2>
+          <img
+            src="./img/about-me.png"
+            alt="Daniel and his partner Rena. (Photograph)"
+            class="widget-image"
+          />
+          <p class="widget-body">
+            Being unemployed sucks, but it isn't all bad. I have all the time in
+            the world to do whatever I want!
+          </p>
+        </div>
+        <div class="sidebar-widget">
+          <h2 class="widget-title">RECENT POSTS</h2>
+          <div class="widget-recent-post">
+            <h3 class="widget-recent-post-title">The Mermaid Pools</h3>
+            <img
+              src="./img/matapouri.png"
+              alt="A girl standing on rocky cliff, sky in background. (Photograph)"
+              class="widget-image"
+            />
+          </div>
+          <div class="widget-recent-post">
+            <h3 class="widget-recent-post-title">A Day at the Beach</h3>
+            <img
+              src="./img/tauranga.png"
+              alt="A girl walking in shallow water at the beach, an island in the distance. (Photograph)"
+              class="widget-image"
+            />
+          </div>
+          <div class="widget-recent-post">
+            <h3 class="widget-recent-post-title">Visiting Home</h3>
+            <img
+              src="./img/whangateau.png"
+              alt="The sun setting over a landscape of grassy hills and trees. (Photograph)"
+              class="widget-image"
+            />
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <p><strong>Daniel Bedggood</strong></p>
+      <p>Copyright 2019</p>
+    </footer>
+  </body>
+</html>
