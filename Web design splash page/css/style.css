@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -54,6 +58,11 @@ strong {
   order: -1;
 }
 
+.fine-print {
+  font-size: 0.5rem;
+  letter-spacing: 1px;
+}
+
 /* ====== */
 /* Layout */
 /* ====== */
@@ -71,6 +80,13 @@ strong {
 
 .signup {
   padding: 2em 1em;
+}
+
+.header > *,
+.signup > * {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* =========== */
@@ -97,11 +113,14 @@ strong {
 
   .header {
     width: 60%;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .signup {
     width: 40%;
-    height: 90vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
