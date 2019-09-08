@@ -7,14 +7,21 @@ body {
   text-align: center;
 }
 
+/* ========== */
+/* Typography */
+/* ========== */
+
 h1 {
   font-size: 2.25rem;
   font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px black;
 }
 
 /* a paragraph directly after an h1 */
 h1 + p {
   color: #f18119;
+  text-shadow: 0px 0px 5px black;
   font-weight: 900;
   font-size: 1.3125rem;
   text-transform: uppercase;
@@ -22,6 +29,7 @@ h1 + p {
 
 h2 {
   font-size: 1.3125rem;
+  margin: 0;
 }
 
 h2 + p {
@@ -29,6 +37,7 @@ h2 + p {
   color: #f18119;
   font-weight: 900;
   font-size: 1rem;
+  margin-top: 0;
 }
 
 strong {
@@ -39,6 +48,60 @@ strong {
   font-size: 0.625rem;
   font-weight: 900;
   color: #f18119;
+  text-shadow: 0px 0px 5px black;
   text-transform: uppercase;
   letter-spacing: 1px;
+  order: -1;
+}
+
+/* ====== */
+/* Layout */
+/* ====== */
+
+.header {
+  background-color: #404040;
+  background-image: url(../images/computer.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 0em 0.25em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signup {
+  padding: 2em 1em;
+}
+
+/* =========== */
+/* Media Query */
+/* =========== */
+
+@media (min-width: 500px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h1 + p,
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .header {
+    width: 60%;
+    height: 100vh;
+  }
+
+  .signup {
+    width: 40%;
+    height: 90vh;
+  }
 }
