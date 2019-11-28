@@ -93,6 +93,7 @@ button {
 .read-more-button:focus,
 .read-more-button:hover {
   background: #eeeeee;
+  cursor: pointer;
 }
 
 /* WIDESCREEN LAYOUT */
